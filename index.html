@@ -9,8 +9,41 @@
         <img id="grass" src="grass1.jpg">
         <a-asset-item 
           id="codey" 
-          src="vfmodel.gltf"></a-asset-item>
-      </a-assets>
+          src="vfmodeljs.gltf"></a-asset-item>
+        <a-asset-item 
+          id="webermonoroc" 
+          src="webermonoroc.gltf"></a-asset-item> 
+        <a-asset-item 
+          id="weberfundation" 
+          src="weberfundation.gltf"></a-asset-item>
+        <a-asset-item 
+          id="webercklincer" 
+          src="webercklincer.gltf"></a-asset-item> 
+        <a-asset-item 
+          id="robot" 
+          src="robot.gltf"></a-asset-item> 
+        <a-asset-item 
+          id="partition" 
+          src="partition.gltf"></a-asset-item>
+        <a-asset-item 
+          id="oblizovka" 
+          src="oblizovka.gltf"></a-asset-item>
+        <a-asset-item 
+          id="fireprotactionglass" 
+          src="fireprotactionglass.gltf"></a-asset-item>   
+        <a-asset-item 
+          id="fireprotaction" 
+          src="fireprotaction.gltf"></a-asset-item>
+        <a-asset-item 
+          id="fenderstratocaster" 
+          src="fenderstratocaster.gltf"></a-asset-item>  
+
+
+
+        <audio 
+      id="background"
+      src="https://cdn.aframe.io/basic-guide/audio/backgroundnoise.wav"></audio>  
+        </a-assets>
       
       <a-sky src="#sky"></a-sky>
       <a-plane 
@@ -18,29 +51,172 @@
         rotation="-90 0 0" 
         width="20" 
         height="20"></a-plane>
+      <!-- pos 1 -->
       <a-entity
-        text="value: Welcome!; color: #FFD500; align: center"
-        position="0 3 -4"
+        text="Weber Monoroc; color: #FFD500; align: center"
+        position="0 1 -4"
         scale="6 6 6"
         animation="property: object3D.position.y;
-          to: 3.2; 
+          to: 1.2; 
+          dir: alternate; 
+          dur: 2000; 
+          loop: true"></a-entity>  
+      <a-entity 
+        gltf-model="#webermonoroc" 
+        position="0 0 -4" 
+        scale="0.5 0.5 0.5"
+        ></a-entity>
+      <!-- pos 2 -->
+      <a-entity
+        text="Ventilated Facade; color: #FFD500; align: center"
+        position="3 1 -4"
+        scale="6 6 6"
+        animation="property: object3D.position.y;
+          to: 1.2; 
           dir: alternate; 
           dur: 2000; 
           loop: true"></a-entity>  
       <a-entity 
         gltf-model="#codey" 
-        position="0 2 -4" 
+        position="3 0 -4" 
         scale="0.5 0.5 0.5"
         animation="property: object3D.position.y;
-          to: 2.2; 
+          to: 0.2; 
           dir: alternate; 
           dur: 2000; 
           loop: true"></a-entity>
+      <!-- pos 3 -->
+      <a-entity
+        text="Weber Fundation; color: #FFD500; align: center"
+        position="6 1 -4"
+        scale="6 6 6"
+        animation="property: object3D.position.y;
+          to: 1.2; 
+          dir: alternate; 
+          dur: 2000; 
+          loop: true"></a-entity>  
+      <a-entity 
+        gltf-model="#weberfundation" 
+        position="6 0 -4" 
+        scale="0.5 0.5 0.5"
+        ></a-entity>
+      <!-- pos 4 -->
+      <a-entity
+        text="Weber Klinker; color: #FFD500; align: center"
+        position="9 1 -4"
+        scale="6 6 6"
+        animation="property: object3D.position.y;
+          to: 1.2; 
+          dir: alternate; 
+          dur: 2000; 
+          loop: true"></a-entity>  
+      <a-entity 
+        gltf-model="#webercklincer" 
+        position="9 0 -4" 
+        scale="0.5 0.5 0.5"
+        ></a-entity> 
+      <!-- pos 5 -->
+      <a-entity
+        text="Prtition; color: #FFD500; align: center"
+        position="-3 1 -4"
+        scale="6 6 6"
+        animation="property: object3D.position.y;
+          to: 1.2; 
+          dir: alternate; 
+          dur: 2000; 
+          loop: true"></a-entity>  
+      <a-entity 
+        gltf-model="#partition" 
+        position="-3 0 -4" 
+        scale="0.5 0.5 0.5"
+        ></a-entity>
+      <!-- pos 6 -->
+      <a-entity
+        text="Facing partition; color: #FFD500; align: center"
+        position="-6 1 -4"
+        scale="6 6 6"
+        animation="property: object3D.position.y;
+          to: 1.2; 
+          dir: alternate; 
+          dur: 2000; 
+          loop: true"></a-entity>  
+      <a-entity 
+        gltf-model="#oblizovka" 
+        position="-6 0 -4" 
+        scale="0.5 0.5 0.5"
+        ></a-entity> 
+      <!-- pos 7 -->
+      <a-entity
+        text="Fire protaction 1; color: #FFD500; align: center"
+        position="-9 1 -4"
+        scale="6 6 6"
+        animation="property: object3D.position.y;
+          to: 1.2; 
+          dir: alternate; 
+          dur: 2000; 
+          loop: true"></a-entity>  
+      <a-entity 
+        gltf-model="#fireprotactionglass" 
+        position="-9 0 -4" 
+        scale="0.5 0.5 0.5"
+        ></a-entity>
+      <!-- pos 8 -->
+      <a-entity
+        text="Fire protaction 2; color: #FFD500; align: center"
+        position="0 1 -6"
+        scale="6 6 6"
+        animation="property: object3D.position.y;
+          to: 1.2; 
+          dir: alternate; 
+          dur: 2000; 
+          loop: true"></a-entity>  
+      <a-entity 
+        gltf-model="#fireprotaction" 
+        position="0 0 -6" 
+        scale="0.5 0.5 0.5"
+        ></a-entity>
+        <!-- pos 9 -->
+      <a-entity
+        text="Hi Im Robot; color: #FFD500; align: center"
+        position="3 1 -6"
+        scale="6 6 6"
+        animation="property: object3D.position.y;
+          to: 1.2; 
+          dir: alternate; 
+          dur: 2000; 
+          loop: true"></a-entity>  
+      <a-entity 
+        gltf-model="#robot" 
+        position="3 0 -6" 
+        scale="0.5 0.5 0.5"
+        ></a-entity> 
+      <!-- pos 10 -->
+      <a-entity
+        text="Music; color: #FFD500; align: center"
+        position="-3 1 -6"
+        scale="6 6 6"
+        animation="property: object3D.position.y;
+          to: 1.2; 
+          dir: alternate; 
+          dur: 2000; 
+          loop: true"></a-entity>  
+      <a-entity 
+        gltf-model="#fenderstratocaster" 
+        position="-3 0 -6" 
+        scale="0.5 0.5 0.5"
+        ></a-entity>     
+
       <!-- Add the code below: -->
       <a-light
         intensity = "2"
         position = "2 4 4"
       ></a-light>
+
+        <a-sound 
+    src="#background" 
+    autoplay="true"
+    position="-3 1 -4"></a-sound>
+
       
     </a-scene>
   </body>
