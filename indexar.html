@@ -5,11 +5,7 @@
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
     <body style="margin : 0px; overflow: hidden;">
         <a-scene embedded arjs>
-        <a-assets>
-          <a-asset-item 
-          id="fireprotactionglass" 
-          src="fireprotactionglass.gltf"></a-asset-item>
-        </a-assets>
+        
         <a-marker type='pattern' url='pattern-Logo_vetonit.patt'>
             
             <a-text
@@ -25,7 +21,7 @@
             ></a-text>
             
             <a-entity 
-            gltf-model="#fireprotactionglass" 
+            gltf-model="fireprotactionglass.gltf" 
             position="0 0.5 0" 
             scale="0.8 0.8 0.8"
             ></a-entity>
