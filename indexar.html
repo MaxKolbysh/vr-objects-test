@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+</head>
+  <body style="margin : 0px; overflow: hidden;">
+    <a-scene embedded arjs>
+      <a-marker-camera type='pattern' url='pattern-Logo_vetonit.patt'></a-marker-camera>
+      <a-assets>
+        <a-asset-item 
+          id="fireprotaction" 
+          src="fireprotaction.gltf"></a-asset-item>
+      </a-assets>
+              <a-text
+        value = "Fire protaction 2"
+        color = "#FFD500"
+        align = "center"
+        position = "0 -1 0"
+        animation="property: object3D.position.y;
+          to: -1.2; 
+          dir: alternate; 
+          dur: 2000; 
+          loop: true"
+      ></a-text>
+
+        
+      <a-entity 
+        gltf-model="#fireprotaction" 
+        position="0 -0.5 0" 
+        scale="1 1 1"
+        ></a-entity>
+        <a-entity camera></a-entity>
+
+    </a-scene>  
+
+</body>
+</html>
+
+
