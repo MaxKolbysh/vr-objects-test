@@ -2,17 +2,43 @@
 <html>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <!-- we import arjs version without NFT but with marker + location based support -->
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
     <body style="margin : 0px; overflow: hidden;">
-        <a-scene embedded arjs>
-        <a-marker type='pattern' url='pattern-vetonit_logo.patt'>
-            <a-entity
-            position="0 0 0"
-            rotation="0 0 0"
-            scale="0.5 0.5 0.5"
-            gltf-model="fireprotactionglass.gltf"
+        <a-scene
+    vr-mode-ui="enabled: false;"
+    renderer="logarithmicDepthBuffer: true;"
+    embedded
+    arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
+  >
+          
+        
+        <a-nft
+      type="nft"
+      url="your-server/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/trex-image/trex"
+      smooth="true"
+      smoothCount="10"
+      smoothTolerance=".01"
+      smoothThreshold="5"
+    >
+            
+            <a-text
+              value = "Partition"
+              color = "#FFD500"
+              align = "center"
+              position = "0 2 0"
+              animation="property: object3D.position.y;
+                to: 2.3; 
+                dir: alternate; 
+                dur: 2000; 
+                loop: true"
+            ></a-text>
+            
+            <a-entity 
+            gltf-model="partition.gltf" 
+            position="0 0.5 0" 
+            scale="0.8 0.8 0.8"
             ></a-entity>
-        </a-marker>
+        </a-nft>
         <a-entity camera></a-entity>
         </a-scene>
     </body>
